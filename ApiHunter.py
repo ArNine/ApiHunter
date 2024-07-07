@@ -28,6 +28,9 @@ class ApiHunter:
 
         return extracted_data
 
+    def _spill(self):
+        pass
+
     def start(self):
         for i in range(self.thread_num):
             thread = threading.Thread(target=self._request, args=(self, ))
